@@ -1,5 +1,7 @@
 git clone https://aur.archlinux.com/yay-git
+
 cd yay
+
 makepkg -si
 
 
