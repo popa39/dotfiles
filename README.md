@@ -1,4 +1,4 @@
-git clone https://aur.archlinux.com/yay-git
+git clone https://aur.archlinux.org/yay-git
 
 cd yay
 
