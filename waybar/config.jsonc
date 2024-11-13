@@ -8,7 +8,7 @@
     "height": 45,
     "modules-left": [
         "clock",
-        "custom/wall",
+        "custom/wall"
     ],
     "modules-center": [
         "hyprland/window"
@@ -23,7 +23,24 @@
         "pulseaudio",
 	"tray"
     ],
-
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+   
     "hyprland/window": {
         "format": "{}"
     },
@@ -52,7 +69,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "🕑 {:%R 📅 %d/%m}",
+        "format": "🕑 {:L%R 📅 %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
     },
     "backlight": {
