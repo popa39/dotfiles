@@ -15,12 +15,12 @@
     ],
     "modules-right": [
         "network",
-        "bluetooth",
         "custom/temperature",
         "custom/memory",
         "battery",
         "backlight",
         "pulseaudio",
+	"pulseaudio#microphone",
 	"tray"
     ],
     "wlr/workspaces": {
@@ -113,9 +113,9 @@
 	"interval": "60",
         "tooltip": false,
         "format-muted": " Muted",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
+        "on-click": "amixer set Master toggle",
+        "on-scroll-up": "amixer set Master 5%+",
+        "on-scroll-down": "amixer set Master 5%-",
         "scroll-step": 100,
         "format-icons": {
             "headphone": "",
@@ -135,9 +135,9 @@
         "format": "{format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
+        "on-click": "amixer set Capture toggle",
+        "on-scroll-up": "amixer set Capture 5%+",
+        "on-scroll-down": "amixer set Capture 5%-",
         "scroll-step": 5
     },
         "custom/pipewire": {
